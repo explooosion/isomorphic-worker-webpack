@@ -6,7 +6,7 @@ This project is an isomorphic webpack generated with [webpack-starter](https://g
 
 Create .env file from .env.example
 
-Install the cli and add your `account_id`, `zone_id` into `wrangler.toml`.
+Install the cli and add your `account_id`, `zone_id`, `route` into `wrangler.toml`.
 
 ```sh
 yarn global add @cloudflare/wrangler
@@ -52,6 +52,18 @@ Publish worker with wrangler script.
 yarn worker:publish
 ```
 
+Publish worker for production.
+
+```sh
+yarn worker:publish-prod
+```
+
+## Online Demo
+
+Demo with subdomain : [http://isomorphic-worker-webpack.ta_7382.workers.dev/](http://isomorphic-worker-webpack.ta_7382.workers.dev/)
+
+Demo with `route` by cloudflare dns : [https://worker.robby570.tw/](https://worker.robby570.tw/)
+
 ## Credit
 
 - [webpack-starter](https://github.com/wbkd/webpack-starter)
@@ -62,4 +74,4 @@ yarn worker:publish
 
 ## License
 
-Isomorphic Worker Webpack share is open source software [licensed as MIT](https://github.com/explooosion/isomorphic-worker-webpack/blob/master/LICENSE).
+Isomorphic Worker Webpack is open source software [licensed as MIT](https://github.com/explooosion/isomorphic-worker-webpack/blob/master/LICENSE).
