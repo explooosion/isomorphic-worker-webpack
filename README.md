@@ -2,6 +2,12 @@
 
 This project is an isomorphic webpack generated with [webpack-starter](https://github.com/wbkd/webpack-starter), and deployed with [Cloudflare Workers](https://www.cloudflare.com/zh-tw/products/cloudflare-workers/).
 
+## Online Demo
+
+Demo with subdomain : [http://isomorphic-worker-webpack.ta_7382.workers.dev/](http://isomorphic-worker-webpack.ta_7382.workers.dev/)
+
+Demo with `route` by cloudflare dns : [https://worker.robby570.tw/](https://worker.robby570.tw/)
+
 ## Installation
 
 Create .env file from .env.example
@@ -57,12 +63,6 @@ Publish worker for production.
 ```sh
 yarn worker:publish-prod
 ```
-
-## Online Demo
-
-Demo with subdomain : [http://isomorphic-worker-webpack.ta_7382.workers.dev/](http://isomorphic-worker-webpack.ta_7382.workers.dev/)
-
-Demo with `route` by cloudflare dns : [https://worker.robby570.tw/](https://worker.robby570.tw/)
 
 ## Credit
 
