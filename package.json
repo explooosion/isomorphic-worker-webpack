@@ -1,0 +1,64 @@
+{
+  "name": "isomorphic-worker-webpack",
+  "version": "1.0.0",
+  "description": "An isomorphic application based on webpack that can be deploy to cloudflare workers.",
+  "scripts": {
+    "worker:watch": "wrangler preview --watch",
+    "worker:build": "wrangler build",
+    "worker:publish": "wrangler publish",
+    "build": "NODE_ENV=production webpack --config webpack/webpack.config.prod.js  --colors",
+    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/explooosion/isomorphic-worker-webpack.git"
+  },
+  "keywords": [
+    "webpack",
+    "startkit",
+    "cloudflare",
+    "worker",
+    "es6",
+    "javascript",
+    "isomorphic"
+  ],
+  "author": {
+    "name": "Robby",
+    "email": "ta7382@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/explooosion/isomorphic-worker-webpack/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "dotenv-webpack": "^1.7.0",
+    "eslint": "^6.5.1",
+    "eslint-loader": "^3.0.2",
+    "file-loader": "^4.2.0",
+    "html-inline-css-webpack-plugin": "^1.8.0",
+    "html-webpack-inline-source-plugin": "^0.0.10",
+    "html-webpack-plugin": "^4.0.0-beta.8",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "raw-loader": "^3.1.0",
+    "sass-loader": "^8.0.0",
+    "script-ext-html-webpack-plugin": "^2.1.4",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "core-js": "^3.3.2"
+  }
+}
