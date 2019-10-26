@@ -2,7 +2,9 @@ account_id = ""
 name = "isomorphic-worker-webpack"
 type = "webpack"
 webpack_config = "webpack.config.js"
-route = ""
 workers_dev = true
-zone_id = ""
 entry-point = "workers-site"
+
+[env.production]
+zone_id = ""
+route = "https://your-website/*"
